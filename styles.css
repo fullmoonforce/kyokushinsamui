@@ -28,8 +28,11 @@ body {
 h1 {
 	font-family: 'Anton', 'Oswald', sans-serif;
 }
-h2, h3, h4, h5, h6 {
+h2, h3, h5, h6 {
 	font-family: 'Raleway', sans-serif;
+}
+h4 {
+	font-weight: normal
 }
 hr {
 	margin: 0;
@@ -90,7 +93,7 @@ em {
 	padding-bottom: 4rem;
 }
 
-p:not(.first-letter-class) {
+.main-body p:not(.first-letter-class) {
 	text-indent: 3rem;
 }
 
