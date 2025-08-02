@@ -1,0 +1,251 @@
+:root {
+	--main-background-color: rgba(255, 215, 0, 1); /* golden */
+	--main-text-color: black; /* deep blue */
+	--em-color: #55142a; /* burgundy */ 
+	--line-color: #142a55; /* deep blue */
+	--blue-color: #142a55; /* deep blue */
+	--red-color: orangered; /* orange red */
+	--yes-color: skyblue; /* light blue */
+	--no-color: coral;
+}
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'PT Serif', serif;
+	background-color: var(--main-background-color);
+	color: var(--main-text-color);
+	
+	display: grid;
+	grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+	row-gap: 3rem;
+}
+h1 {
+	font-family: 'Anton', 'Oswald', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+hr {
+	margin: 0;
+	border: 1px solid var(--line-color);
+	width: 100%;
+}
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* Heading section */
+.title {
+	grid-column: 2 / 3;
+}
+.hero-img {
+	max-height: 250px;
+	width: 100%;
+	object-fit: contain;
+}
+#title-h1 {
+	text-align: center;
+	font-size: 8rem;
+	color: var(--red-color);
+}
+#title-date {
+	text-align: center;
+	font-size: 2.4rem;
+	color: var(--em-color);
+}
+
+/* Main section */
+.main-body {
+	grid-column: 2 / 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 3rem;
+	
+	font-size: 1.8rem;
+	text-align: left;
+	letter-spacing: 0.6px;
+}
+.main-body a:any-link{
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--main-text-color);
+	border-bottom: 2px solid var(--red-color);
+}
+.week-class {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	color: var(--em-color);
+}
+.first-letter-class p{
+	padding-bottom: 4rem;
+}
+
+p:not(.first-letter-class) {
+	text-indent: 3rem;
+}
+
+.first-letter-class {
+	scroll-margin-top: 4rem;
+}
+.first-letter-class::first-letter {
+	font-size: 6rem;
+	color: var(--red-color);
+	float: left;
+	margin-right: 1rem;
+	line-height: 4rem;
+}
+.first-letter-class p:first-of-type {
+	padding-bottom: 4rem;
+}
+.first-letter-class a:any-link {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--main-text-color);
+	border-bottom: 2px solid var(--red-color);
+}
+
+.plan {
+	background-color: white;
+	border: 1px solid var(--line-color);
+	padding: 1rem 1rem 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	
+	position: relative;
+}
+.plan h2 {
+	align-self: center;
+	font-size: 4rem;
+	color: var(--em-color);
+}
+.exercise {
+	scroll-margin-top: 4rem;
+	display: block;
+}
+.toggle-checkbox:checked ~ .exercise {
+    display: none;
+}
+
+.plan h3 {
+
+}
+.a-sticky {
+	position: sticky;
+	right: 0;
+	top: 1rem;
+	color: var(--main-text-color);
+	background-color: var(--main-background-color);
+	border-bottom: 2px solid var(--red-color);
+	cursor: pointer;
+	width: max-content;
+	align-self: flex-end;
+	z-index: 3;
+}
+.plan-nav {
+
+}
+.plan-nav ul {
+	list-style: none;
+	font-size: 6rem;	
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.plan-nav ul a:any-link {
+	color: var(--red-color);
+	text-decoration: none;
+	border-bottom: 5px solid var(--red-color);
+}
+
+.plan ol a:any-link {
+	font-weight: bold;
+	color: var(--main-text-color);
+	text-decoration: none;
+	border-bottom: 2px solid var(--red-color);
+}
+.plan ol {
+	list-style-position: inside;
+}
+
+.desc-list {
+	list-style: none;
+	font-size: 1.6rem;
+	padding-left: 0;
+}
+.desc-list li {
+	position: relative;
+	padding-left: 1.5rem;
+}
+.desc-list li:before {
+	content: '+';
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: var(--yes-color);
+	font-weight: bold;
+}
+.desc-list li.no-class:before {
+	content: '-';
+	color: var(--no-color);
+}
+
+
+video {
+	width: 100%;
+	display: none;
+}
+video + p {
+	text-indent: 0 !important;
+}
+
+
+
+
+
+
+
+
+/* Bottom section */
+.bottom {
+	grid-column: 1 / -1;
+	margin: 0 auto 3rem;
+	font-size: 3rem;
+}
+
+
+@media (max-width: 830px){
+	body {
+		grid-template-columns: 1fr;
+		padding: 0 1rem;
+	}
+	.main-body, .title, .bottom {
+		grid-column: 1 / -1;
+	}
+	html {
+		font-size: 55%;
+	}
+	#title-h1 {
+		font-size: 5rem;
+	}
+	.plan h2{
+		font-size: 3rem;
+	}
+	#title-name{
+		font-size: 5rem;
+	}
+	.title img {
+		max-height: 125px;
+	}
+}
