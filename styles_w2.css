@@ -36,6 +36,10 @@ h1 {
 h2, h3, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 }
+h2 {
+	font-size: 4rem;
+	text-align: center;
+}
 h3 {
 	font-size: 2rem;
 }
@@ -263,6 +267,9 @@ video + p {
 	#title-h1 {
 		font-size: 5rem;
 	}
+	h2 {
+		font-size: 3rem;
+	}
 	.plan h2{
 		font-size: 3rem;
 	}
@@ -273,3 +280,4 @@ video + p {
 		max-height: 125px;
 	}
 }
+
