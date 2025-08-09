@@ -1,17 +1,12 @@
 :root {
-	--main-background-color: rgba(204, 30, 49, 1); /* golden */
-	--main-text-color: linen; /* deep blue */
-	--plan-text-color: black;
-	
-	--em-color: #76aec5; /* chinese blue lightest */
-	--line-color: #1f466c; /* chinese blue darkest */
+	--main-background-color: rgba(255, 215, 0, 1); /* golden */
+	--main-text-color: black; /* deep blue */
+	--em-color: #55142a; /* burgundy */ 
+	--line-color: #142a55; /* deep blue */
+	--blue-color: #142a55; /* deep blue */
 	--red-color: orangered; /* orange red */
-	
-	--yes-color: #218eaa; /* chinese blue normal */
-	--no-color: orangered; /* orange red */
-	--shadow-color1: #76aec5; /* chinese blue lightest */
-	--shadow-color2: #218eaa; /* chinese blue normal */
-	--shadow-color3: #1f466c; /* chinese blue darkest */
+	--yes-color: skyblue; /* light blue */
+	--no-color: coral;
 }
 *, ::before, ::after {
 	margin: 0;
@@ -64,19 +59,7 @@ em {
 #title-h1 {
 	text-align: center;
 	font-size: 8rem;
-	text-shadow: 
-		1px 1px var(--shadow-color2), 
-		-1px -1px var(--shadow-color2), 
-		1px -1px var(--shadow-color2), 
-		-1px 1px var(--shadow-color2),
-
-		2px 2px var(--shadow-color1), 
-		-2px -2px var(--shadow-color1), 
-		2px -2px var(--shadow-color1), 
-		-2px 2px var(--shadow-color1);
-		
-		
-	color: var(--shadow-color3);
+	color: var(--red-color);
 }
 #title-date {
 	text-align: center;
@@ -101,7 +84,7 @@ em {
 	text-decoration: none;
 	font-weight: bold;
 	color: var(--main-text-color);
-	border-bottom: 2px solid var(--shadow-color1);
+	border-bottom: 2px solid var(--red-color);
 }
 .week-class {
 	color: var(--em-color);
@@ -130,7 +113,7 @@ em {
 .first-letter-class a:any-link {
 	text-decoration: none;
 	font-weight: bold;
-	color: var(--plan-text-color);
+	color: var(--main-text-color);
 	border-bottom: 2px solid var(--red-color);
 }
 
@@ -143,7 +126,6 @@ em {
 	gap: 4rem;
 	
 	position: relative;
-	color: var(--plan-text-color);
 }
 .plan h2 {
 	align-self: center;
@@ -164,7 +146,7 @@ em {
 	top: 1rem;
 	color: var(--main-text-color);
 	background-color: var(--main-background-color);
-	border-bottom: 2px solid var(--em-color);
+	border-bottom: 2px solid var(--red-color);
 	cursor: pointer;
 	width: max-content;
 	align-self: flex-end;
@@ -189,7 +171,7 @@ em {
 
 .plan ol a:any-link {
 	font-weight: bold;
-	color: var(--plan-text-color);
+	color: var(--main-text-color);
 	text-decoration: none;
 	border-bottom: 2px solid var(--red-color);
 }
@@ -228,14 +210,7 @@ video + p {
 }
 
 
-.calendar  {
-	width: 100%;
-	list-style: none;
-	padding-left: 3rem;
-}
-.calendar-img {
-	width: 100%;
-}
+
 
 
 
