@@ -94,7 +94,7 @@ em {
 	justify-content: space-around;
 }
 .empty {
-	width: 100px;
+	width: 101px;
 }
 
 /* Main section */
@@ -288,4 +288,5 @@ video + p {
 	.title img {
 		max-height: 125px;
 	}
+
 }
