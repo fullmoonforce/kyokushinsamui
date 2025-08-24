@@ -1,10 +1,13 @@
 :root {
 	--main-background-color: rgba(255, 215, 0, 1); /* golden */
-	--main-text-color: black; /* deep blue */
+	--main-text-color: black; /* black */
+	
 	--em-color: #55142a; /* burgundy */ 
 	--line-color: #142a55; /* deep blue */
 	--blue-color: #142a55; /* deep blue */
+	
 	--red-color: orangered; /* orange red */
+	
 	--yes-color: skyblue; /* light blue */
 	--no-color: coral;
 }
