@@ -115,6 +115,7 @@ em {
 	font-weight: bold;
 	color: var(--main-text-color);
 	border-bottom: 2px solid var(--red-color);
+	min-width: 100px;
 }
 .week-class {
 	color: var(--em-color);
